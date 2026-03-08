@@ -1,5 +1,5 @@
 public class Lab1{
     public static void main(String[] args){
-        System.out.println("JAVA is bakwas.");
+        System.out.println("JAVA is not bakwas.");
     }
 }
