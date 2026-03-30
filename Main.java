@@ -1,21 +1,19 @@
 public class Main {
 
-    public static void main(String[] args){
-Students s1 = new Students();
+    public static void main(String[] args) {
+        BankAccount account1 = new BankAccount("Ali", -50);
+        BankAccount account2 = new BankAccount("Danish", 1000.0);
 
-s1.name = "Ali";
+        account2.deposit(500);
+        account2.withdraw(200);
 
-s1.rollNumber = 101;
+        account2.displayAccountDetails();
 
-Students s2 = new Students();
+        account1.deposit(-100);
+        account1.withdraw(50);
+        account1.displayAccountDetails();
 
-s2.name = "Ahmed";
-
-s2.rollNumber = 102;
-
-s1.displayInfo();
-s2.displayInfo();
-
+        System.out.println("Final Details :" + account1.getAccountHolder() + account1.getBalance());
+        System.out.println("Final Details :" + account2.getAccountHolder() + account2.getBalance());
     }
-    
 }

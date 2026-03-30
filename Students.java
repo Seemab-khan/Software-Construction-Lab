@@ -1,7 +1,14 @@
 public class Students {
 
-    String name;
-    int rollNumber;
+   private String name;
+   private int rollNumber;
+
+
+Students(String n,int r){
+    this.name=n;
+    this.rollNumber=r;
+}
+
 
     public  void displayInfo(){
 
